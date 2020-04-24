@@ -1,5 +1,10 @@
 body {
   background-color: #f4f5f6;
+  font-family: "Rubik", sans-serif;
+}
+
+body a {
+  text-decoration: none;
 }
 
 .navbar {
@@ -34,14 +39,92 @@ body {
   font-size: 20px;
   padding-right: 55px;
   flex-shrink: 1;
-  
 }
 
-.navbar .nav-right i{
+.navbar .nav-right i {
   margin-right: 20px;
 }
 
-.navbar .nav-right i span{
+.navbar .nav-right i span {
   margin-left: 10px;
-  font: 20px 'Rubik', sans-serif;
+  font: 20px "Rubik", sans-serif;
+}
+
+main {
+  padding-top: 60px;
+}
+
+.section-search {
+  width: 100%;
+  background-color: rgba(100, 101, 102, 0.4);
+  background: url("img/reading-book.jpg") center cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.section-search .search-wrapper {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-search .search-wrapper .search-box-top {
+  width: 100%;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 0;
+  font-size: 25px;
+  text-align: left;
+}
+
+.section-search .search-wrapper .search-box-container {
+  height: 23vh;
+  width: 100%;
+  background: rgba(200, 201, 202, 1);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.search-wrapper .search-box-container .search-box-main {
+  margin: 0 30px 30px;
+}
+
+.search-wrapper .search-box-container .search-box-main label {
+  text-transform: uppercase;
+}
+
+.search-wrapper .search-box-container .search-box-main .search-input {
+  padding-top: 6px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.search-box-container .search-box-main .search-input .search-box {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-box-container .search-box-main .search-input .search-box::placeholder {
+  color: #cecaca;
+  padding-left: 15px;
+  font-size: 20px;
+}
+
+.search-box-container .search-box-main .search-input .btn-search {
+  color: white;
+  text-transform: uppercase;
+  background: #d35649;
+  padding: 12px;
+  border-radius: 0 4px 4px 0;
 }

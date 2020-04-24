@@ -1,37 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/7d6392431b.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="icon" href="img/icon2.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/7d6392431b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="icon" href="img/icon2.png" />
     <title>Bookeeper</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="navbar">
-            <div class="nav-left">
-                <div class="icon">
-                    <img src="img/icon2.png" alt="...">
-                </div>
-                <div class="logo">
-                    <img src="img/logo_white_small.png" alt="...">
-                </div>
-            </div>
-            <div class="nav-right">
-                <i class="fas fa-search"><span>BOOKS</span></i>
-                <i class="far fa-user"><span>ABOUT</span></i>
-                <i class="fas fa-rss"><span>BLOG</span></i>
-                <i class="fas fa-bars"><span>MORE</span></i>
-            </div>
-        </nav>
+      <nav class="navbar">
+        <div class="nav-left">
+          <div class="icon">
+            <img src="img/icon2.png" alt="..." />
+          </div>
+          <div class="logo">
+            <img src="img/logo_white_small.png" alt="..." />
+          </div>
+        </div>
+        <div class="nav-right">
+          <i class="fas fa-search"><span>BOOKS</span></i>
+          <i class="far fa-user"><span>ABOUT</span></i>
+          <i class="fas fa-rss"><span>BLOG</span></i>
+          <i class="fas fa-bars"><span>MORE</span></i>
+        </div>
+      </nav>
     </header>
     <main>
-        
+      <section class="section-search">
+        <div class="search-wrapper">
+          <div class="search-box-top">
+            <p>bookeeper...the next pace in your journey of literature.</p>
+          </div>
+          <div class="search-box-container">
+            <div class="search-box-main">
+              <label for="searchBox">search by keyword</label>
+              <div class="search-input">
+                <input
+                  class="search-box"
+                  id="searchBox"
+                  type="search"
+                  placeholder="Find books"
+                />
+                <a class="btn-search" href="#">search</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
