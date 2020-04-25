@@ -1,3 +1,7 @@
+:root {
+  --deep-red: #d35649;
+}
+
 body {
   background-color: #f4f5f6;
   font-family: "Rubik", sans-serif;
@@ -13,10 +17,10 @@ body a {
   top: 0;
   left: 0;
   right: 0;
-  background: #d35649;
+  background: var(--deep-red);
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  z-index: 1;
 }
 
 .navbar .nav-left {
@@ -57,9 +61,8 @@ main {
 .section-search {
   width: 100%;
   height: 65vh;
-  /* background-color: rgba(100, 101, 102, 0.4); */
-  background-image: url('/img/reading-book.jpg');
-  background-position: left top;
+  background-image: url("/img/reading-book.jpg");
+  background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -70,7 +73,7 @@ main {
 }
 
 .section-search .search-wrapper {
-  width: 60%;
+  width: 60vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -101,43 +104,146 @@ main {
   margin: 0 30px 30px;
 }
 
-.search-wrapper .search-box-container .search-box-main label {
+.search-box-container .search-box-main label {
   text-transform: uppercase;
 }
 
-.search-wrapper .search-box-container .search-box-main .search-input {
+.search-box-container .search-box-main .search-input {
   padding-top: 6px;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
 }
 
-.search-box-container .search-box-main .search-input .search-box {
+.search-box-main .search-input .search-box {
   width: 100%;
   height: 40px;
   border: none;
-  border-radius: 5px 0 0 5px;
+  border-radius: 4px 0 0 4px;
 }
 
-.search-box-container .search-box-main .search-input .search-box::placeholder {
+.search-box-main .search-input .search-box::placeholder {
   color: #cecaca;
   padding-left: 15px;
   font-size: 20px;
 }
 
-.search-box-container .search-box-main .search-input .btn-search {
+.search-box-main .search-input .btn-search {
   color: white;
   text-transform: uppercase;
-  background: #d35649;
-  padding: 12px;
+  background: var(--deep-red);
+  padding: 10px;
   border-radius: 0 4px 4px 0;
 }
 
-.section-search .search-wrapper .btn-working-system{
+.section-search .search-wrapper .btn-working {
   color: #333;
   background-color: rgba(230, 231, 232, 1);
   padding: 15px;
   position: relative;
   top: 30px;
   border-radius: 5px;
+}
+
+.section-working{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.section-working h2{
+  grid-area: 1/1/2/3;
+  background-color: lightblue;
+}
+.section-working .item1{
+  grid-area: 2/1/3/2;
+  background-color: lightcoral;
+  height: 100px;
+}
+.section-working .item2{
+  grid-area: 2/2/3/3;
+
+}
+.section-working .item3{
+  grid-area: 3/1/4/2;
+}
+.section-working .item4{
+  grid-area: 3/2/4/3;
+}
+
+@media only screen and (max-width: 1024px) {
+  .navbar .nav-right i span {
+    display: none;
+  }
+  .navbar .nav-right .i1 {
+    padding-right: 40px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main{
+    padding-top: 110px;
+  }
+  .navbar {
+    display: block;
+    height: 110px;
+  }
+
+  .navbar .nav-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 55px;
+    flex-shrink: 1;
+    padding-left: 0;
+  }
+
+  .navbar .nav-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 55px;
+    color: white;
+    font-size: 20px;
+    flex-shrink: 1;
+  }
+
+  .navbar .nav-right .i2 {
+    margin-right: 0;
+  }
+  .section-search{
+    height: 85vh;
+  }
+
+  .section-search .search-wrapper {
+    width: 95vw;
+  }
+
+  .search-wrapper .search-box-container .search-box-main {
+    margin: 0 10px 15px;
+  }
+
+  .search-box-container .search-box-main .search-input {
+    display: block;
+    flex-wrap: nowrap;
+  }
+  .search-box-main .search-input .search-box {
+
+    border-radius: 4px;
+  }
+
+  .search-box-main .search-input .search-anchor {
+    display: flex;
+    background: var(--deep-red);
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    margin-top: 15px;
+  }
+
+  .search-input .search-anchor .btn-search {
+    padding: 0;
+  }
+
 }
