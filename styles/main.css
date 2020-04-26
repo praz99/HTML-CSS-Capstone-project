@@ -350,6 +350,7 @@ footer .footer-middle {
   height: 30px;
   border-radius: 4px 0 0 4px;
   background-color: black;
+  color: rgb(122, 117, 117);
 }
 
 .subs .email-input .email::placeholder{
