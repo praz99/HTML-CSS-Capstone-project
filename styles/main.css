@@ -313,14 +313,14 @@ footer .footer-top {
 footer .footer-middle {
   display: flex;
   align-items: flex-start;
-  justify-content: center;
+  padding: 0 20px;
 }
 
 .footer-middle .item {
-  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 33.3%;
+  margin: 0 10px;
 }
 .footer-middle .item h6 {
   color: white;
@@ -328,6 +328,7 @@ footer .footer-middle {
   text-transform: uppercase;
   font-weight: 500;
   margin-bottom: 15px;
+  text-align: center;
 }
 .footer-middle .item p {
   color: rgb(122, 117, 117);
@@ -344,6 +345,7 @@ footer .footer-middle {
   border: 1px solid gray;
   align-items: center;
   border-radius: 4px;
+  width: 90%;
 }
 .subs .email-input .email{
   border: 0;
@@ -355,7 +357,7 @@ footer .footer-middle {
 
 .subs .email-input .email::placeholder{
   padding-left: 10px;
-  color: rgba(105, 105, 105, 0.4);
+  color: rgba(138, 136, 136, 0.507);
 }
 .subs .email-input .btn-send{
   color: white;

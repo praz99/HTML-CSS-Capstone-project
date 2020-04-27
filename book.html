@@ -49,74 +49,122 @@
     </nav>
     </header>
     <main>
-      <footer>
-    <div class="footer-top">
-      <ul class="list list-left">
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">SEARCH</a></li>
-        <li><a href="#">ABOUT US</a></li>
-        <li><a href="#">ADVERTISE</a></li>
-      </ul>
-      <a href="index.html" class="list-center">
-        <img src="img/icon.png" alt="...">
-      </a>
-      <ul class="list list-right">
-        <li><a href="#">FAECBOOK</a></li>
-        <li><a href="#">TWITTER</a></li>
-        <li><a href="#">BLOG</a></li>
-        <li><a href="#">GOOGLE+</a></li>
-      </ul>
-    </div>
-    <div class="footer-middle">
-      <div class="item subs">
-        <h6>subscribe<h6>
-        <div class="email-input">
-         <input type="email" class="email" placeholder="youremail@example.com">
-          <div class="send-anchor">
-            <a class="btn-send" href="#">Send</a>
+      <section class="search-filter">
+        <h2>Filter by book name, genre, publisher and language</h2>
+        <div class="dropdown-menu">
+          <div class="input-field">
+            <label for="name" class="label-type">Book Name:</label>
+            <input type="text" id="name" class="input search-type">
+          </div>
+          <div class="input-field">
+            <label for="type" class="label-type">Genre</label>
+            <select class="search-type"id="type" size="1">
+              <option value="nobel">Novel</option>
+              <option value="poems">Poem</option>
+              <option value="story">Story</option>
+              <option value="play">Play</option>
+              <option value="essay">Essay</option>
+            </select>
+          </div>
+          <div class="input-field">
+            <label for="publisher" class="label-type">Publisher:</label>
+            <input type="text" id="publisher" class="input search-type">
+          </div>
+          <div class="input-field">
+            <label for="type" class="label-type">Language</label>
+            <select class="search-type"id="type" size="1">
+              <option value="english">English</option>
+              <option value="french">French</option>
+              <option value="spanish">Spanish</option>
+              <option value="russian">Russian</option>
+              <option value="chinese">Chinese</option>
+              <option value="arabic">Arabic</option>
+            </select>
+          </div>
+          <div class="input-field">
+            <input type="submit" value="Search" class="btn btn-submit">
+          </div>
+          <div class="input-field">
+            <input type="reset" value="Clear Search" class="btn btn-reset">
           </div>
         </div>
-      </div>
-      <div class="item contact">
-        <h6>contact</h6>
-        <p>
-          Have a question or submission?<br>
-          contact us: <a href="mailto:contact@bookeeper.com">contact@bookeeper.com</a>
-        </p>
-      </div>
-      <div class="item about">
-        <h6>about</h6>
-        <p>
-          Bookeeper is an online platform where visitors can search for books of their choice in least possible time and read it. <br>
-          <a href="#">learn more</a>
-        </p>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="social">
-        <ul class="icons-social">
-          <li>
-            <a href="# "><i class="fab fa-facebook-square " aria-hidden="true"></i></a>
-          </li>
-          <li>
-            <a href="# "><i class="fab fa-twitter " aria-hidden="true"></i></a>
-          </li>
-          <li>
-            <a href="# "><i class="fab fa-instagram " aria-hidden="true"></i></a>
-          </li>
-          <li>
-            <a href="# "><i class="fab fa-tumblr " aria-hidden="true"></i></a>
-          </li>
-          <li>
-            <a href="# "><i class="fab fa-linkedin-in " aria-hidden="true"></i></a>
-          </li>
+      </section>
+      <section class="result">
+        <div class="book-1">
+          <img src="img/fiji.jpg" alt="...">
+          <div class="info">
+            
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-top">
+        <ul class="list list-left">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">SEARCH</a></li>
+          <li><a href="#">ABOUT US</a></li>
+          <li><a href="#">ADVERTISE</a></li>
+        </ul>
+        <a href="index.html" class="list-center">
+          <img src="img/icon.png" alt="...">
+        </a>
+        <ul class="list list-right">
+          <li><a href="#">FAECBOOK</a></li>
+          <li><a href="#">TWITTER</a></li>
+          <li><a href="#">BLOG</a></li>
+          <li><a href="#">GOOGLE+</a></li>
         </ul>
       </div>
-      <div class="copyright">
-        &copy; 2020 bookeeper
+      <div class="footer-middle">
+        <div class="item subs">
+          <h6>subscribe<h6>
+          <div class="email-input">
+           <input type="email" class="email" placeholder="youremail@example.com">
+            <div class="send-anchor">
+              <a class="btn-send" href="#">Send</a>
+            </div>
+          </div>
+        </div>
+        <div class="item contact">
+          <h6>contact</h6>
+          <p>
+            Have a question or submission?<br>
+            contact us: <a href="mailto:contact@bookeeper.com">contact@bookeeper.com</a>
+          </p>
+        </div>
+        <div class="item about">
+          <h6>about</h6>
+          <p>
+            Bookeeper is an online platform where visitors can search for books of their choice in least possible time and read it. <br>
+            <a href="#">learn more</a>
+          </p>
+        </div>
       </div>
-    </div>
-      </footer>
-    </main>
+      <div class="footer-bottom">
+        <div class="social">
+          <ul class="icons-social">
+            <li>
+              <a href="# "><i class="fab fa-facebook-square " aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="# "><i class="fab fa-twitter " aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="# "><i class="fab fa-instagram " aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="# "><i class="fab fa-tumblr " aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="# "><i class="fab fa-linkedin-in " aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="copyright">
+          &copy; 2020 bookeeper
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
