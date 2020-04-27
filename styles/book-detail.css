@@ -1,0 +1,130 @@
+:root {
+  --deep-red: #d35649;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.container .book-info {
+  width: 75%;
+  margin-right: 15px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border-radius: 4px;
+  box-shadow: 0 -8px 5px rgba(230, 231, 232, 1),
+    4px 0 5px rgba(230, 231, 232, 1),
+    -8px 0 5px rgba(230, 231, 232, 1),
+    0 4px 5px rgba(230, 231, 232, 1);
+}
+
+.book-info .title,
+.similar-books .title {
+  grid-area: 1/1/2/3;
+  padding: 20px 0;
+}
+.title h1,
+.similar-books h1 {
+  color: var(--deep-red);
+  font-size: 30px;
+  font-weight: 500;
+  text-align: left;
+  background: rgba(230, 231, 232, 0.5);
+  padding-left: 10px;
+}
+
+.book-info .image {
+  grid-area: 2/1/4/2;
+  padding: 0 0 10px 15px;
+}
+
+.book-info table {
+  justify-self: center;
+  grid-area: 2/2/3/3;
+  border-collapse: separate;
+  border-spacing: 10px;
+}
+table td {
+  border: 1px solid gray;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+  
+}
+table td span {
+  color: rgb(11, 144, 197);
+}
+
+.book-info a {
+  grid-area: 3/2/4/3;
+  color: white;
+  background-color: rgb(11, 144, 197);
+  justify-self: center;
+  align-self: center;
+  border-radius: 4px;
+  padding: 10px 20px;
+}
+
+.book-info a:hover{
+  background-color: rgb(9, 112, 153);
+}
+
+.book-info .description {
+  grid-area: 4/1/5/3;
+  padding: 2rem 3rem;
+}
+
+.description p{
+  font-size: 14px;
+  padding: 10px 0;
+  color: #333;
+}
+
+details > summary{
+  font-size: 14px;
+  padding: 0.5rem;
+  background-color: rgba(230, 231, 232, 0.5);
+  border: 1px solid rgba(230, 231, 232, 1);
+  border-radius: 4px;
+}
+
+details > summary:hover{
+  background-color: rgba(230, 231, 232, 1);
+}
+
+.container .similar-books {
+  width: 25%;
+  margin-left: 15px;
+  border-radius: 4px;
+  box-shadow: 0 -5px 5px rgba(230, 231, 232, 1),
+    5px 0 5px rgba(230, 231, 232, 1),
+    -4px 0 5px rgba(230, 231, 232, 1),
+    0 4px 5px rgba(230, 231, 232, 1);
+}
+
+.similar-books .book{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.similar-books h1{
+  font-size: 20px;
+  white-space: nowrap;
+  text-align: center;
+  padding: 7px 0;
+}
+
+.book img{
+  max-width: 120px;
+  max-height: 240px;
+  padding: 10px;
+}
+
+.book .info p {
+  font-size: 13px;
+  line-height: 0.5rem;
+  padding: 10px 10px 15px 10px;
+}
