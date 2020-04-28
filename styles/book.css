@@ -7,12 +7,14 @@
   margin: 3em 0;
   padding: 3em 3em 4em 3em;
 }
+
 .search-filter h2 {
   color: gray;
   font-weight: 500;
   font-size: 20px;
   text-align: center;
 }
+
 .search-filter .dropdown-menu {
   display: flex;
   align-items: flex-end;
@@ -70,144 +72,177 @@
   padding: 0 30px;
   margin-bottom: 20px;
 }
-.result h2{
+
+.result h2 {
   grid-area: 1/1/2/13;
   color: gray;
   font-size: 20px;
   justify-self: center;
   font-weight: 500;
 }
+
 .result .book {
   justify-self: center;
   box-shadow: 0 10px 5px gray;
   background: rgba(230, 231, 232, 1);
 }
-.result .book-1{
+
+.result .book-1 {
   grid-area: 2/1/3/4;
 }
-.result .book-2{
+
+.result .book-2 {
   grid-area: 2/4/3/7;
 }
-.result .book-3{
+
+.result .book-3 {
   grid-area: 2/7/3/10;
 }
-.result .book-4{
+
+.result .book-4 {
   grid-area: 2/10/3/13;
 }
-.result .book-5{
+
+.result .book-5 {
   grid-area: 3/1/4/4;
 }
-.result .book-6{
+
+.result .book-6 {
   grid-area: 3/4/4/7;
 }
-.result .book-7{
+
+.result .book-7 {
   grid-area: 3/7/4/10;
 }
-.result .book-8{
+
+.result .book-8 {
   grid-area: 3/10/4/13;
 }
-.result .book-9{
+
+.result .book-9 {
   grid-area: 4/1/5/4;
 }
-.result .book-10{
+
+.result .book-10 {
   grid-area: 4/4/5/7;
 }
 
-.book .info{
+.book .info {
   padding: 10px;
   font-size: 0.9rem;
   line-height: 2rem;
 }
-.book .info a{
-  color: var(--deep-red);
-}
-.book .anchors{
-  text-align: center;
-  padding: 12px;
-}
 
-.anchors a{
+.anchors a {
   color: white;
   background: var(--deep-red);
   padding: 8px;
   border-radius: 4px;
 }
 
-@media only screen and (max-width: 1024px){
-  .result .book-1{
+.book .info a {
+  color: var(--deep-red);
+}
+
+.book .anchors {
+  text-align: center;
+  padding: 12px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .result .book-1 {
     grid-area: 2/1/3/5;
   }
-  .result .book-2{
+
+  .result .book-2 {
     grid-area: 2/5/3/9;
   }
-  .result .book-3{
+
+  .result .book-3 {
     grid-area: 2/9/3/13;
   }
-  .result .book-4{
+
+  .result .book-4 {
     grid-area: 3/1/4/5;
   }
-  .result .book-5{
+
+  .result .book-5 {
     grid-area: 3/5/4/9;
   }
-  .result .book-6{
+
+  .result .book-6 {
     grid-area: 3/9/4/13;
   }
-  .result .book-7{
+
+  .result .book-7 {
     grid-area: 4/1/5/5;
   }
-  .result .book-8{
+
+  .result .book-8 {
     grid-area: 4/5/5/9;
   }
-  .result .book-9{
+
+  .result .book-9 {
     grid-area: 4/9/5/13;
   }
-  .result .book-10{
+
+  .result .book-10 {
     grid-area: 5/1/6/5;
   }
 }
-
 
 @media only screen and (max-width: 768px) {
   .search-filter .dropdown-menu {
     display: block;
   }
-  .result .book-1{
+
+  .result .book-1 {
     grid-area: 2/1/3/7;
   }
-  .result .book-2{
+
+  .result .book-2 {
     grid-area: 2/7/3/13;
   }
-  .result .book-3{
+
+  .result .book-3 {
     grid-area: 3/1/4/7;
   }
-  .result .book-4{
+
+  .result .book-4 {
     grid-area: 3/7/4/13;
   }
-  .result .book-5{
+
+  .result .book-5 {
     grid-area: 4/1/5/7;
   }
-  .result .book-6{
+
+  .result .book-6 {
     grid-area: 4/7/5/13;
   }
-  .result .book-7{
+
+  .result .book-7 {
     grid-area: 5/1/6/7;
   }
-  .result .book-8{
+
+  .result .book-8 {
     grid-area: 5/7/6/13;
   }
-  .result .book-9{
+
+  .result .book-9 {
     grid-area: 6/1/7/7;
   }
-  .result .book-10{
+
+  .result .book-10 {
     grid-area: 6/7/7/13;
   }
 }
 
-@media only screen and (max-width: 440px){
-  .result{
-    display:block;
+@media only screen and (max-width: 440px) {
+  .result {
+    display: block;
   }
-  .result .book{
+
+  .result .book {
     display: flex;
     flex-direction: column;
     align-items: center;
