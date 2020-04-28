@@ -32,7 +32,7 @@ body a {
   flex-shrink: 1;
 }
 
-.navbar .nav-left .icon img {
+.nav-left .icon img {
   height: 40px;
   width: 40px;
 }
@@ -48,12 +48,16 @@ body a {
   flex-shrink: 1;
 }
 
-.navbar .nav-right a i {
+.nav-right a i {
   margin-right: 20px;
   color: white;
 }
 
-.navbar .nav-right i span {
+.nav-right a i:hover{
+  color: rgb(236, 236, 236);
+}
+
+.nav-right i span {
   margin-left: 10px;
   font: 20px "Rubik", sans-serif;
 }
@@ -65,7 +69,7 @@ main {
 .section-search {
   width: 100%;
   height: 65vh;
-  background-image: url("/img/reading-book.jpg");
+  background-image: url("img/reading-book.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -84,7 +88,7 @@ main {
   justify-content: center;
 }
 
-.section-search .search-wrapper .search-box-top {
+.search-wrapper .search-box-top {
   width: 100%;
   text-align: center;
   color: white;
@@ -94,7 +98,7 @@ main {
   text-align: center;
 }
 
-.section-search .search-wrapper .search-box-container {
+.search-wrapper .search-box-container {
   height: 23vh;
   width: 100%;
   background: rgba(230, 231, 232, 0.5);
@@ -104,35 +108,35 @@ main {
   justify-content: flex-end;
 }
 
-.search-wrapper .search-box-container .search-box-main {
+.search-box-container .search-box-main {
   margin: 0 30px 30px;
 }
 
-.search-box-container .search-box-main label {
+.search-box-main label {
   text-transform: uppercase;
 }
 
-.search-box-container .search-box-main .search-input {
+.search-box-main .search-input {
   padding-top: 6px;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
 }
 
-.search-box-main .search-input .search-box {
+.search-input .search-box {
   width: 100%;
   height: 40px;
   border: none;
   border-radius: 4px 0 0 4px;
 }
 
-.search-box-main .search-input .search-box::placeholder {
+.search-input .search-box::placeholder {
   color: #cecaca;
   padding-left: 15px;
   font-size: 20px;
 }
 
-.search-box-main .search-input .btn-search {
+.search-input .btn-search {
   color: white;
   text-transform: uppercase;
   background: var(--deep-red);
@@ -140,13 +144,21 @@ main {
   border-radius: 0 4px 4px 0;
 }
 
-.section-search .search-wrapper .btn-working {
+.search-input .btn-search:hover{
+  background: #b1493e;
+}
+
+.search-wrapper .btn-working {
   color: #333;
   background-color: rgba(230, 231, 232, 1);
   padding: 15px;
   position: relative;
   top: 30px;
   border-radius: 5px;
+}
+
+.search-wrapper .btn-working:hover{
+  background-color: rgb(221, 221, 221);
 }
 
 .section-working {
@@ -210,18 +222,18 @@ main {
   text-align: center;
 }
 
-.container .item .info-icon {
+.item .info-icon {
   color: #333;
   font-size: 25px;
 }
-.container .item .info-title {
+.item .info-title {
   margin-top: 15px;
   font-size: 20px;
   text-transform: uppercase;
   color: #333;
 }
 
-.container .item .info {
+.item .info {
   margin-top: 15px;
   color: #333;
 }
@@ -239,7 +251,7 @@ main {
 .section-features .item-3 {
   background-color: #519cd7;
 }
-.section-features .feat-item .feat-left {
+.feat-item .feat-left {
   width: 70%;
   display: flex;
   flex-direction: column;
@@ -248,33 +260,40 @@ main {
   align-items: flex-start;
 }
 
-.section-features .feat-item .feat-right {
+.feat-item .feat-right {
   width: 30%;
 }
-.section-features .feat-item .feat-left h4 {
+.feat-item .feat-left h4 {
   color: white;
   font-size: 25px;
   font-weight: 500;
 }
 
-.section-features .feat-item .feat-left p {
+.feat-item .feat-left p {
   color: white;
   padding-top: 15px;
 }
 
-.section-features .feat-item .feat-left a {
+.feat-item .feat-left a {
   background-color: white;
   padding: 10px;
   border-radius: 4px;
   margin-top: 40px;
 }
-.section-features .item-1 .feat-left a {
+
+.feat-item .feat-left a:hover{
+  background-color: rgb(241, 240, 240);
+}
+
+.item-1 .feat-left a {
   color: var(--deep-red);
 }
-.section-features .item-2 .feat-left a {
+
+.item-2 .feat-left a {
   color: #98a4a5;
 }
-.section-features .feat-item .feat-right img {
+
+.feat-item .feat-right img {
   height: 220px;
   width: 220px;
   border-radius: 50%;
@@ -290,18 +309,22 @@ footer .footer-top {
   justify-content: center;
   padding: 30px;
 }
+
 .footer-top .list {
   display: flex;
+  flex: 1;
+  justify-content: space-around;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
 }
 
 .footer-top .list li a {
   color: white;
   padding: 7px 0;
   text-align: center;
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
-  font-size: 20px;
+  font-size: 16px;
 }
+
 .footer-top .list-center img {
   height: 50px;
   width: 50px;
@@ -340,34 +363,38 @@ footer .footer-middle {
   color: var(--deep-red);
 }
 
-.footer-middle .subs .email-input{
+.subs .email-input{
   display: flex;
   border: 1px solid gray;
   align-items: center;
   border-radius: 4px;
-  width: 90%;
+  width: 100%;
 }
-.subs .email-input .email{
+
+.email-input .email{
   border: 0;
   height: 30px;
   border-radius: 4px 0 0 4px;
   background-color: black;
   color: rgb(122, 117, 117);
+  width: 90%;
 }
 
-.subs .email-input .email::placeholder{
+.email-input .email::placeholder{
   padding-left: 10px;
   color: rgba(138, 136, 136, 0.507);
 }
-.subs .email-input .btn-send{
+
+.email-input .btn-send{
   color: white;
   font-size: 16px;
   font-weight: 400;
   text-transform: capitalize;
   background-color: gray;
-  padding: 8px 20px 5px;
+  padding: 8px 20px 6px;
   border-radius: 0 4px 4px 0;
 }
+
 .footer-bottom{
   display: flex;
   height: 40px;
@@ -496,27 +523,35 @@ display: flex;
   footer .footer-top {
     flex-direction:column;
   }
+  .footer-top .list{
+    width: 100%;
+  }
   .footer-top .list-center{
     margin: 20px 0 15px 0;
   }
   footer .footer-middle {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 30px;
   }
-  .footer-middle > div{
-    padding-top: 20px;
+
+  .footer-middle .item {
+    width: 100%;
+    margin-top: 30px;
   }
-  
 }
 
 @media only screen and (max-width: 440px) {
   body {
     font-size: 14px;
   }
+
   .section-features .feat-item .feat-right img {
     height: 140px;
     width: 140px;
   }
+
   .section-features .feat-item .feat-left h4 {
     font-size: 20px;
   }
