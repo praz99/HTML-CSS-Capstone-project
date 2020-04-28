@@ -80,6 +80,10 @@ main {
   position: relative;
 }
 
+.section-search .hidden{
+  display: none;
+}
+
 .section-search .search-wrapper {
   width: 60vw;
   display: flex;

@@ -47,6 +47,7 @@
 
 .image img {
   margin-top: 10px;
+  width: 100%;
 }
 
 .book-info table {
@@ -169,6 +170,10 @@ details > summary:hover {
   .container .book-info {
     display: flex;
     flex-direction: column;
+  }
+
+  .book-info .image {
+    padding: 10px 15px;
   }
 
   .title h1 {
