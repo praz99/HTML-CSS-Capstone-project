@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/7d6392431b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/book.css">
+    <link rel="icon" href="img/icon.png" />
+    <title>Bookeeper</title>
+  </head>
+  <body>
+    <header>
+    <nav class="navbar">
+      <div class="nav-left">
+        <div class="icon">
+          <a href="index.html">
+            <img src="img/icon.png" alt="..." />
+          </a>
+        </div>
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/logo_white_small.png" alt="..." />
+          </a>
+        </div>
+      </div>
+      <div class="nav-right">
+        <a href="book.html"
+          ><i class="i1 fas fa-search"><span>BOOKS</span></i></a
+        >
+        <a href="#"
+          ><i class="i1 far fa-user"><span>ABOUT</span></i></a
+        >
+        <a href="#"
+          ><i class="i1 fas fa-rss"><span>BLOG</span></i></a
+        >
+        <a href="#"
+          ><i class="i2 fas fa-bars"><span>MORE</span></i></a
+        >
+      </div>
+    </nav>
+    </header>
+    <main>
+      <section class="search-filter">
+        <h2>Filter by book title, genre, publisher and language</h2>
+        <div class="dropdown-menu">
+          <div class="input-field">
+            <label for="title" class="label-type">Book Title</label>
+            <input type="text" id="title" class="input search-type">
+          </div>
+          <div class="input-field">
+            <label for="author" class="label-type">Author</label>
+            <input type="text" id="author" class="input search-type">
+          </div>
+          <div class="input-field">
+            <label for="type1" class="label-type">Genre</label>
+            <select class="search-type" id="type1" size="1">
+              <option value="nobel">Novel</option>
+              <option value="poems">Poem</option>
+              <option value="story">Story</option>
+              <option value="play">Play</option>
+              <option value="essay">Essay</option>
+            </select>
+          </div>
+          <div class="input-field">
+            <label for="publisher" class="label-type">Publisher</label>
+            <input type="text" id="publisher" class="input search-type">
+          </div>
+          <div class="input-field">
+            <label for="type2" class="label-type">Language</label>
+            <select class="search-type" id="type2" size="1">
+              <option value="english">English</option>
+              <option value="french">French</option>
+              <option value="spanish">Spanish</option>
+              <option value="russian">Russian</option>
+              <option value="chinese">Chinese</option>
+              <option value="arabic">Arabic</option>
+            </select>
+          </div>
+          <div class="input-field">
+            <input type="submit" value="Search" class="btn btn-submit">
+          </div>
+          <div class="input-field">
+            <input type="reset" value="Clear Search" class="btn btn-reset">
+          </div>
+        </div>
+      </section>
+      <section class="result">
+        <h2>Search Results</h2>
+        <div class="book book-1">
+          <img src="img/fiji.jpg" alt="...">
+          <div class="info">
+            <p><strong>Title:</strong> The Frights of Fiji</p>
+            <p><strong>Author:</strong> <a href="#" class= "author">Sunayna Prasad</a></p>
+            <p><strong>Year Published:</strong> 2018</p>
+            <p><strong>Genre:</strong> Adventure</p>
+          </div>
+          <div class="anchors">
+            <a href="book-detail.html#book-1" class="read-book">Full details</a>
+            <a href="#" class="read-book">Read book</a>
+          </div>
+        </div>
+        <div class="book book-2">
+          <img src="img/house.jpg" alt="...">
+          <div class="info">
+            <p><strong>Title:</strong> The House of Closed Doors</p>
+            <p><strong>Author:</strong> <a href="#" class= "author">Jane Steen</a></p>
+            <p><strong>Year Published:</strong> 2012</p>
+            <p><strong>Genre:</strong>History/Suspense</p>
+          </div>
+            <div class="anchors">
+              <a href="book-detail.html#book-2" class="">Full details</a>
+              <a href="#" class="read-book">Read book</a>
+            </div>
+        </div>
+        <div class="book book-3">
+          <img src="img/ash.jpg" alt="...">
+          <div class="info">
+            <p><strong>Title:</strong> ASH</p>
+            <p><strong>Author:</strong> <a href="#" class= "author">Jason Brant</a></p>
+            <p><strong>Year Published:</strong> 2013</p>
+            <p><strong>Genre:</strong> Thriller</p>
+          </div>
+            <div class="anchors">
+              <a href="book-detail.html#book-3" class="read-book">Full details</a>
+              <a href="#" class="read-book">Read book</a>
+            </div>
+        </div>
+        <div class="book book-4">
+          <img src="img/reason.jpg" alt="...">
+          <div class="info">
+            <p><strong>Title:</strong> Loss of Reason</p>
+            <p><strong>Author:</strong> <a href="#" class= "author">Miles A. Maxwell</a></p>
+            <p><strong>Year Published:</strong> 2015</p>
+            <p><strong>Genre:</strong> Adventure/Fiction</p>
+          </div>
+            <div class="anchors">
+              <a href="book-detail.html" class="read-book">Full details</a>
+              <a href="#" class="read-book">Read book</a>
+            </div>
+        </div>
+        <div class="book book-5">
+          <img src="img/darkpromise.jpg" alt="...">
+          <div class="info">
+            <p><strong>Title:</strong> Dark Promise</p>
+            <p><strong>Author:</strong> <a href="#" class= "author">Talia Jager</a></p>
+            <p><strong>Year Published:</strong> 2012</p>
+            <p><strong>Genre:</strong> Fantasy</p>
+          </div>
+            <div class="anchors">
+              <a href="book-detail.html" class="read-book">Full details</a>
+              <a href="#" class="read-book">Read book</a>
+            </div>
+        </div>
+        <div class="book book-6">
+          <img src="img/ultimate.jpg" alt="...">
+          <div class="info">
+            <p><strong>Title:</strong> The Ultimate Sacrifice</p>
+            <p><strong>Author:</strong> <a href="#" class= "author">Talia Jager</a></p>
+            <p><strong>Year Published:</strong> 2011</p>
+            <p><strong>Genre:</strong> Fantasy</p>
+          </div>
+            <div class="anchors">
+              <a href="book-detail.html" class="read-book">Full details</a>
+              <a href="#" class="read-book">Read book</a>
+            </div>
+        </div>
+        <div class="book book-7">
+          <img src="img/alien.jpg" alt="...">
+          <div class="info">
+            <p><strong>Title:</strong> Alien Pets</p>
+            <p><strong>Author:</strong> <a href="#" class= "author">Trisha McNary</a></p>
+            <p><strong>Year Published:</strong> 2014</p>
+            <p><strong>Genre:</strong> Science Fiction</p>
+          </div>
+            <div class="anchors">
+              <a href="book-detail.html" class="read-book">Full details</a>
+              <a href="#" class="read-book">Read book</a>
+            </div>
+        </div>
+        <div class="book book-8">
+          <img src="img/beach.jpeg" alt="...">
+          <div class="info">
+            <p><strong>Title:</strong> Beach Town: Apocalypse</p>
+            <p><strong>Author:</strong> <a href="#" class= "author">Thomas M. Harrison</a></p>
+            <p><strong>Year Published:</strong> 2020</p>
+            <p><strong>Genre:</strong> Horror</p>
+          </div>
+            <div class="anchors">
+              <a href="book-detail.html" class="read-book">Full details</a>
+              <a href="#" class="read-book">Read book</a>
+            </div>
+        </div>
+        <div class="book book-9">
+          <img src="img/rats.jpg" alt="...">
+          <div class="info">
+            <p><strong>Title:</strong> Revolt of the Rats</p>
+            <p><strong>Author:</strong> <a href="#" class= "author">Reed Blitzerman</a></p>
+            <p><strong>Year Published:</strong> 2015</p>
+            <p><strong>Genre:</strong> Horror</p>
+          </div>
+          <div class="anchors">
+            <a href="book-detail.html" class="read-book">Full details</a>
+            <a href="#" class="read-book">Read book</a>
+          </div>
+        </div>
+        <div class="book book-10">
+          <img src="img/ignite-cover.jpg" alt="...">
+          <div class="info">
+            <p><strong>Title:</strong> Skyborn: Ignite</p>
+            <p><strong>Author:</strong> <a href="#" class= "author">Hannah Parker</a></p>
+            <p><strong>Year Published:</strong> 2020</p>
+            <p><strong>Genre:</strong> Fantasy</p>
+          </div>
+          <div class="anchors">
+            <a href="book-detail.html" class="read-book">Full details</a>
+            <a href="#" class="read-book">Read book</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <nav class="footer-top">
+        <ul class="list list-left">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">SEARCH</a></li>
+          <li><a href="#">ABOUT US</a></li>
+          <li><a href="#">ADVERTISE</a></li>
+        </ul>
+        <a href="index.html" class="list-center">
+          <img src="img/icon.png" alt="...">
+        </a>
+        <ul class="list list-right">
+          <li><a href="#">FAECBOOK</a></li>
+          <li><a href="#">TWITTER</a></li>
+          <li><a href="#">BLOG</a></li>
+          <li><a href="#">GOOGLE+</a></li>
+        </ul>
+      </nav>
+      <div class="footer-middle">
+        <div class="item subs">
+          <h6>subscribe</h6>
+          <div class="email-input">
+            <input type="email" class="email" placeholder="youremail@example.com">
+            <div class="send-anchor">
+              <a class="btn-send" href="#">Send</a>
+            </div>
+          </div>
+        </div>
+        <div class="item contact">
+          <h6>contact</h6>
+          <p>
+            Have a question or submission?<br>
+            contact us: <a href="mailto:contact@bookeeper.com">contact@bookeeper.com</a>
+          </p>
+        </div>
+        <div class="item about">
+          <h6>about</h6>
+          <p>
+            Bookeeper is an online platform where visitors can search for books of their choice in least possible time and read it. <br>
+            <a href="#">learn more</a>
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <nav class="social">
+          <ul class="icons-social">
+            <li>
+              <a href="# "><i class="fab fa-facebook-square " aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="# "><i class="fab fa-twitter " aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="# "><i class="fab fa-instagram " aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="# "><i class="fab fa-tumblr " aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="# "><i class="fab fa-linkedin-in " aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </nav>
+        <div class="copyright">
+          &copy; 2020 bookeeper
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
