@@ -1,5 +1,5 @@
 # HTML & CSS Capstone-project
-This repository is created for the HTMC & CSS capstone project as a part of Microverse Inc. curriculum. This project is based on an online directory of schools> But the project has been personalised and instead of directory of schools I have made a online directory of books. The [original design](https://www.behance.net/gallery/25563385/PatashuleKE) can be seen here.
+This repository is created for the HTML & CSS capstone project as a part of Microverse Inc. curriculum. This project is based on an online directory of schools> But the project has been personalised and instead of directory of schools I have made a online directory of books. The [original design](https://www.behance.net/gallery/25563385/PatashuleKE) can be seen here.
 
 # Screenshot
 This is the screenshot of my work.
