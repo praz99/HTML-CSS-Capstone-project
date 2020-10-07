@@ -69,7 +69,7 @@ main {
 .section-search {
   width: 100%;
   height: 65vh;
-  background-image: url('img/reading-book.jpg');
+  background-image: url('../img/reading-book.jpg');
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
